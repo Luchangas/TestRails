@@ -1,0 +1,31 @@
+body
+  section.main
+    .wrap
+      = image_tag('phone.png', alt: 'phone', class: 'phone')
+      .separator
+      = image_tag('tcg_logo.png', alt: 'logo', class: 'logo')
+  section.features
+    .list
+      .list-item
+        = image_tag('ic_list.png', alt: 'list', class: 'image-list')
+        h1.title-feature
+          | Keep track of your money
+        p.text-feature
+          | See all your debts and all your friend debts towards you
+      .list-item
+        = image_tag('ic_reminder.png', alt: 'list', class: 'image-rem')
+        h1.title-feature
+          | Generate reminders
+        p.text-feature
+          | Get reminded who owes you money or who you owe money to
+      .list-item
+        = image_tag('ic_safe.png', alt: 'list', class: 'image-saf')
+        h1.title-feature
+          | No internet needed
+        p.text-feature
+          | All your debts are kept safe in your phone
+  section.footer
+    h1.title-footer
+      | Get info of new updates
+    input.input type="text"
+    button.button type="submit" Subscribe
